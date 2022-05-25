@@ -1,0 +1,16 @@
+div{
+    display: grid;
+    place-items: center;
+}
+.moon{
+    display: grid;
+    place-items: center;
+    border: 1px solid darkgray;
+    width: 30rem;
+}
+.moon img {
+    border-radius: 50%;
+border: 1px solid darkgray;
+color: blueviolet;
+margin-top: 1rem;
+}
