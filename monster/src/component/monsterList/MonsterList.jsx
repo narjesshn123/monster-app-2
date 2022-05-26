@@ -35,7 +35,7 @@ monsterlist.filter(monster => monster.name.toLowerCase().includes(filter.toLower
      .map(monster=>(
        
                 <div key={monster.id}>
-                    <Link to={"./card"}>
+                    <Link to={`/monsters/${monster.id}`}>
                   <MonsterCard name={monster.name} 
                   image={"https://robohash.org/"+monster.username}
                   email={monster.email}/>

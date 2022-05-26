@@ -1,4 +1,4 @@
-export const home=()=>{
+export const Home=()=>{
     return(
         <div>
             welcome to this page

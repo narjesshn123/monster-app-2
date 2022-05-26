@@ -1,7 +1,9 @@
 import './MonsterPage.css';
 import { Link } from "react-router-dom";
 import { useState , useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 export const MonsterPage = () =>{
+const param = useParams()
     const[users, setUser]=useState(
     {
           id: 1,
@@ -11,7 +13,7 @@ export const MonsterPage = () =>{
     }
     )
     const getMoon = ()=> {
-        fetch("https://jsonplaceholder.typicode.com/users/1")
+        fetch(`https://jsonplaceholder.typicode.com/users/${param.monsterID}`)
         .then(Response => Response.json())
         .then(data=>setUser(data))
     }
@@ -26,7 +28,7 @@ export const MonsterPage = () =>{
         <h1>{users.name}</h1>
         <h5>{users.email}</h5>
         </div>
-        <Link to={"./home"}>go to back</Link>
+        <Link to={"/monsters"}>go to back</Link>
         </>
     )
 }
