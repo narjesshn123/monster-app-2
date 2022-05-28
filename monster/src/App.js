@@ -4,11 +4,13 @@ import MonsterList from './component/monsterList/MonsterList';
 import {Home} from './component/Home'    
 import {BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
 import Footer from './component/Footer'; 
-   
+import Navbar from './component/Navbar';   
    
 function App() {
   return (
     <div className="main-container">
+     
+     
       <div className='main-flex'>
   
      <BrowserRouter>
@@ -31,12 +33,28 @@ function App() {
 
 const Main = ()=>{
   return(
-    <div>
-
-    <ul>
+    <div className='menu'>
+ <nav className="nav">
+            <a href="/" className="site-title">
+                Site Name
+            </a>
+            <ul>
+                <li className='active'>
+                 
+                        <Link to="/Home">pricing</Link>
+                       
+                    </li>
+                    <li>
+                   
+                        <Link to="/monsters">About</Link>
+                        
+                </li>
+            </ul>
+        </nav>
+    {/* <ul>
     <li><Link to={"/Home"}>home</Link></li>
     <li><Link to={"/monsters"}>monster</Link></li>
-   </ul>
+   </ul> */}
    <Outlet/>
 
    </div>
