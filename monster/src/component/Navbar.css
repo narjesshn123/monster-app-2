@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+   
 }
 .site-title{
     font-size: 2rem;
@@ -16,6 +17,7 @@ body{
     gap: 2rem;
     padding: 0 1rem;
     width: 100%;
+ 
 }
 .nav ul{
     padding: 0;
@@ -37,4 +39,10 @@ body{
     display: flex;
     align-items: center;
     padding: 0.25rem;
+}
+.home{
+    width: 100%;
+    display: flex;
+  
+    flex: 1;
 }

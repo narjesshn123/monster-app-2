@@ -4,7 +4,7 @@ import MonsterList from './component/monsterList/MonsterList';
 import {Home} from './component/Home'    
 import {BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
 import Footer from './component/Footer'; 
-import Navbar from './component/Navbar';   
+import './component/Navbar.css'  
    
 function App() {
   return (
@@ -40,14 +40,18 @@ const Main = ()=>{
             </a>
             <ul>
                 <li className='active'>
-                 
-                        <Link to="/Home">pricing</Link>
+                
+                        <Link to="/Home">
+                          <a>home</a>
+                        </Link>
                        
                     </li>
                     <li>
-                   
-                        <Link to="/monsters">About</Link>
-                        
+                 
+                        <Link to="/monsters">
+                          <a>monster</a>
+                          </Link>
+                       
                 </li>
             </ul>
         </nav>
