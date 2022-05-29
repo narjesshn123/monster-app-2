@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";  
-import {MonsterCard} from '..//monsterCard/MonsterCard'
-import './Monsterlist.css'
+import {MonsterCard} from '..//monsterCard/MonsterCard';
+import {Container, Col, Row} from 'react-bootstrap'
+import './Monsterlist.css';                                       
 import { Link } from "react-router-dom";
  const MonsterList = () =>{
   const[monsterlist, setmonsterlist] = useState([])
@@ -18,32 +19,37 @@ import { Link } from "react-router-dom";
     
     return(
        <>
-      <div>
-         <div>
+      <Container>
+      <hr style={{color:"aquamarine"}}/>
+        <hr style={{color:"aquamarine"}}/>
+         <Container className="search">
             <button>
               search
               <input type={"search"} 
               onChange={e=>setfilter(e.target.value)}>
               </input>
              </button>
-      </div>
-       <div className="monster">
+      </Container>
+       <Row>
+        <hr style={{color:"aquamarine"}}/>
+        <hr style={{color:"aquamarine"}}/>
+        <hr style={{color:"aquamarine"}}/>
 {monsterlist.filter(monster => monster.name.toLowerCase().includes(filter.toLowerCase())).length===0?
-<div>there is no moster with this name</div>:
+<Row className="no-monster">there is no moster with this name</Row>:
 
 monsterlist.filter(monster => monster.name.toLowerCase().includes(filter.toLowerCase()))
      .map(monster=>(
        
-                <div key={monster.id}>
+                <Col  key={monster.id}>
                     <Link to={`/monsters/${monster.id}`}>
-                  <MonsterCard name={monster.name} 
+                  <MonsterCard className="monsters" name={monster.name} 
                   image={"https://robohash.org/"+monster.username}
                   email={monster.email}/>
                   </Link>
-                </div>
+                </Col>
                   ))}
-       </div> 
-       </div>
+       </Row> 
+       </Container>
        </>
     )
 }

@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-
+import { Container } from "react-bootstrap";
 import './Monstercard.css'
  export const MonsterCard = ({image="", name="",email=""}) =>{
     useEffect(()=>{
-      document.title="mons"
+    
     },[])
     return(
-      <> 
+      <Container className="monsters"> 
       <span >
         <img src={image}/>
-        <h1>{name}</h1>
+        <h4>{name}</h4>
         <p>{email}</p>
       </span>
-        </>
+        </Container>
 
     )
 }

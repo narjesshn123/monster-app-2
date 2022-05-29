@@ -2,3 +2,34 @@
     margin-left: 20px;
     margin-right: 50px;
   }
+  .monsters{
+    box-sizing: border-box; 
+border: 1px solid rgb(5, 237, 195);  
+border-radius: 50px;
+margin-top: 2rem;       
+margin-bottom: 2rem;
+
+  cursor:pointer;
+    position:relative;
+    padding:10px 20px;
+    background:rgb(67, 205, 175);
+    font-size:28px;
+   
+    transition:all 1s;
+    
+  }
+  .monsters:hover{
+    border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+  background:rgba(0,0,0,.5);
+  color:white;
+  }
+  .monsters h4{
+    color: rgb(235, 245, 227);
+  }
+  .monsters h4:hover{
+    color: whitesmoke;
+  }
+  .monsters p{
+    color: rgb(235, 245, 227);
+  }

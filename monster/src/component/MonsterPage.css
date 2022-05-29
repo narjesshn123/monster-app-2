@@ -1,5 +1,5 @@
 div{
-
+  
     place-items: center;
 }
 .moon{
@@ -7,10 +7,15 @@ div{
     place-items: center;
     border: 1px solid darkgray;
     width: 30rem;
+    margin-top: 1rem;
 }
 .moon img {
     border-radius: 50%;
 border: 1px solid darkgray;
 color: blueviolet;
 margin-top: 1rem;
+}
+a a{      
+    color: rgb(63, 136, 85);   
+        
 }

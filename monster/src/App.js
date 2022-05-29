@@ -36,7 +36,7 @@ const Main = ()=>{
     <div className='menu'>
  <nav className="nav">
             <a href="/" className="site-title">
-                Site Name
+               Monster Page         
             </a>
             <ul>
                 <li className='active'>
