@@ -1,6 +1,6 @@
 import './Navbar.css';
 import {Container} from 'react-bootstrap'
-export const Home=()=>{
+ const Home=()=>{
     return(
         <div className="home">
 <div className='row'>
@@ -17,3 +17,4 @@ export const Home=()=>{
         </div>
     )
 }
+export default Home

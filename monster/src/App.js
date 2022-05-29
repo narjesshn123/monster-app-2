@@ -1,7 +1,7 @@
 import './App.css';
 import { MonsterPage } from './component/MonsterPage';
 import MonsterList from './component/monsterList/MonsterList';
-import {Home} from './component/Home'    
+import Home from './component/Home';  
 import {BrowserRouter, Route, Routes, Link, Outlet } from 'react-router-dom';
 import Footer from './component/Footer'; 
 import './component/Navbar.css'  
